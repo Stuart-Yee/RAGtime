@@ -1,9 +1,8 @@
-from flask import Flask, render_template, session, flash, redirect, request
+from flask import render_template, session, flash, redirect, request
 from RAGtime import app
-# from flask_bcrypt import Bcrypt
-# from flask_app.models.user import User
-# bcrypt = Bcrypt(app)
+
 
 @app.route("/")
 def index():
+    print("route started")
     return render_template("index.html")
